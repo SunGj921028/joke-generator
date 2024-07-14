@@ -1,0 +1,92 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: darkslateblue;
+}
+
+::selection {
+    background-color: rgb(105, 94, 177);
+    color: whitesmoke;
+}
+
+.joke-container {
+    width: 525px;
+    padding: 55px 45px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 15px 20px 50px rgba(9, 119, 136, 0.3);
+}
+
+header {
+    font-size: 1.7rem;
+    font-weight: 750;
+    margin-bottom: 5px;
+    padding-left: 25%;
+    color: darkslateblue;
+    display: inline-flex;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sl-type {
+    font-size: 0.69rem;
+    font-weight: 500;
+    padding-left: 5px;
+    color: darkslateblue;
+    /* text-align: right; */
+    font-style: italic;
+    /* text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.joke-border {
+    box-shadow: 2px 2px 15px rgba(0,139,253,0.28);
+    margin: 30px 0px;
+}
+
+.joke-place {
+    font-size: 1.0rem;
+    font-weight: 300;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 25px;
+    padding: 12px;
+    /* margin: 30px 0px; */
+    opacity: 0;
+}
+
+.fade-in-out {
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+#produce-btn {
+    display: block;
+    background-color: darkslategray;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+    color: #e7e7ec;
+    font-weight: 500;
+    padding: 12px 25px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#produce-btn:hover {
+    background-color: rgb(168, 157, 237);
+    color: rgb(25, 23, 23);
+}
